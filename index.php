@@ -33,16 +33,52 @@
 
 <div class="container">
 
-            <div class="welcome">
-                <div class="hi">
-                    <div class="first_row">
-<!--                        <img src="--><?php //echo $url_profile_icon; ?><!--" alt="img" width="100"/>-->
+    <div id="openModal3" class="modalInformation">
+    </div>
+    <div id="openModal4" class="modalInformation2">
+        <div>
+            <div class="loading_box">
+                <h3 style="padding-top:40px;">Loading . . . </h3>
+                <div class="cssload-loader"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="welcome">
+        <div class="hi">
+            <div class="first_row">
+                <h1><i class="fa fa-group fa-1g" style="font-size:26px; margin-right:6px;"></i> Add summoner</h1>
+            </div>
+
+            <div class="second_row">
+
+                <form method="POST" action="" class="form_id_simple">
+                    <select name="region">
+                        <option value="euw">Europe West</option>
+                        <option value="na">North America</option>
+                        <option value="eune">Europe Nordic & East</option>
+                        <option value="jp">Japan</option>
+                        <option value="kr">Republic of Korea</option>
+                        <option value="oce">Oceania</option>
+                        <option value="br">Brazil</option>
+                        <option value="lan">Latin America North</option>
+                        <option value="las">Latin America South</option>
+                        <option value="ru">Russia</option>
+                        <option value="tr">Turkey</option>
+                    </select>
+                    <input type="text" placeholder="Summoner &nbsp;&#xF002" name="name" value=""/>
+                    <input type="submit" value="&#xf067; &nbsp; Add" class="add_player" data-href="single">
+
+                </form>
+            </div>
+
+            <div class="players">
+
+                <div id="openModal" class="modalDialog">
+                    <div>
+                        <a id="closeModal" href="javascript:void(0)" title="Close" class="close">X</a>
                         <h1><i class="fa fa-group fa-1g" style="font-size:26px; margin-right:6px;"></i> Add summoner</h1>
-                    </div>
-
-                    <div class="second_row">
-
-                        <form method="POST" action="" class="form_id_simple">
+                        <form method="POST" action="" class="form_id">
                             <select name="region">
                                 <option value="euw">Europe West</option>
                                 <option value="na">North America</option>
@@ -57,577 +93,551 @@
                                 <option value="tr">Turkey</option>
                             </select>
                             <input type="text" placeholder="Summoner &nbsp;&#xF002" name="name" value=""/>
-                            <input type="submit" value="&#xf067; &nbsp; Add" class="add_player" data-href="single">
+                            <input type="hidden" value="" class="input_player" readonly/>
+                            <input type="submit" value="&#xf067; &nbsp; Add" class="add_player" data-href="modal">
 
                         </form>
                     </div>
-
-                    <div class="players">
-
-                        <div id="openModal" class="modalDialog">
-                            <div>
-                                <a id="closeModal" href="javascript:void(0)" title="Close" class="close">X</a>
-                                <h1><i class="fa fa-group fa-1g" style="font-size:26px; margin-right:6px;"></i> Add summoner</h1>
-                                <form method="POST" action="" class="form_id">
-                                    <select name="region">
-                                        <option value="euw">Europe West</option>
-                                        <option value="na">North America</option>
-                                        <option value="eune">Europe Nordic & East</option>
-                                        <option value="jp">Japan</option>
-                                        <option value="kr">Republic of Korea</option>
-                                        <option value="oce">Oceania</option>
-                                        <option value="br">Brazil</option>
-                                        <option value="lan">Latin America North</option>
-                                        <option value="las">Latin America South</option>
-                                        <option value="ru">Russia</option>
-                                        <option value="tr">Turkey</option>
-                                    </select>
-                                    <input type="text" placeholder="Summoner &nbsp;&#xF002" name="name" value=""/>
-                                    <input type="hidden" value="" class="input_player" readonly/>
-                                    <input type="submit" value="&#xf067; &nbsp; Add" class="add_player" data-href="modal">
-
-                                </form>
-                            </div>
-                        </div>
-
-
-                        <div id="player_1" class="player_empty">
-                            <a  class="openModal" href="" data-id="1">
-                                <div class="empty">
-                                    <i class="fa fa-user fa-2x"></i>
-                                </div>
-
-                                <div class="circle">
-                                    <i class="fa fa-plus fa-1g"></i>
-                                </div>
-                            </a>
-                            <div style="" class="test">0<br><span style="font-size: 12px;">Points</span></div>
-                        </div>
-
-                        <div id="player_2" class="player_empty">
-                            <a  class="openModal" href="" data-id="2">
-                                <div class="empty">
-                                    <i class="fa fa-user fa-2x"></i>
-                                </div>
-
-                                <div class="circle">
-                                    <i class="fa fa-plus fa-1g"></i>
-                                </div>
-                            </a>
-                            <div style="" class="test">0<br><span style="font-size: 12px;">Points</span></div>
-                        </div>
-
-                        <div id="player_3" class="player_empty">
-                            <a class="openModal" href="" data-id="3">
-                                <div class="empty">
-                                    <i class="fa fa-user fa-2x"></i>
-                                </div>
-
-                                <div class="circle">
-                                    <i class="fa fa-plus fa-1g"></i>
-                                </div>
-                            </a>
-                            <div style="" class="test">0<br><span style="font-size: 12px;">Points</span></div>
-                        </div>
-
-                        <div id="player_4" class="player_empty">
-                            <a class="openModal" href=""  data-id="4">
-                                <div class="empty">
-                                    <i class="fa fa-user fa-2x"></i>
-                                </div>
-
-                                <div class="circle">
-                                    <i class="fa fa-plus fa-1g"></i>
-                                </div>
-                            </a>
-                            <div style="" class="test">0<br><span style="font-size: 12px;">Points</span></div>
-                        </div>
-
-                        <div id="player_5" class="player_empty">
-                            <a class="openModal" href="" data-id="5">
-                                <div class="empty">
-                                    <i class="fa fa-user fa-2x"></i>
-                                </div>
-
-                                <div class="circle">
-                                    <i class="fa fa-plus fa-1g"></i>
-                                </div>
-                            </a>
-                            <div style="" class="test">0<br><span style="font-size: 12px;">Points</span></div>
-                        </div>
-
-                    </div>
-
                 </div>
 
+
+                <div id="player_1" class="player_empty">
+                    <a  class="openModal" href="" data-id="1">
+                        <div class="empty">
+                            <i class="fa fa-user fa-2x"></i>
+                        </div>
+
+                        <div class="circle">
+                            <i class="fa fa-plus fa-1g"></i>
+                        </div>
+                    </a>
+                    <div style="" class="test">0<br><span style="font-size: 12px;">Points</span></div>
+                </div>
+
+                <div id="player_2" class="player_empty">
+                    <a  class="openModal" href="" data-id="2">
+                        <div class="empty">
+                            <i class="fa fa-user fa-2x"></i>
+                        </div>
+
+                        <div class="circle">
+                            <i class="fa fa-plus fa-1g"></i>
+                        </div>
+                    </a>
+                    <div style="" class="test">0<br><span style="font-size: 12px;">Points</span></div>
+                </div>
+
+                <div id="player_3" class="player_empty">
+                    <a class="openModal" href="" data-id="3">
+                        <div class="empty">
+                            <i class="fa fa-user fa-2x"></i>
+                        </div>
+
+                        <div class="circle">
+                            <i class="fa fa-plus fa-1g"></i>
+                        </div>
+                    </a>
+                    <div style="" class="test">0<br><span style="font-size: 12px;">Points</span></div>
+                </div>
+
+                <div id="player_4" class="player_empty">
+                    <a class="openModal" href=""  data-id="4">
+                        <div class="empty">
+                            <i class="fa fa-user fa-2x"></i>
+                        </div>
+
+                        <div class="circle">
+                            <i class="fa fa-plus fa-1g"></i>
+                        </div>
+                    </a>
+                    <div style="" class="test">0<br><span style="font-size: 12px;">Points</span></div>
+                </div>
+
+                <div id="player_5" class="player_empty">
+                    <a class="openModal" href="" data-id="5">
+                        <div class="empty">
+                            <i class="fa fa-user fa-2x"></i>
+                        </div>
+
+                        <div class="circle">
+                            <i class="fa fa-plus fa-1g"></i>
+                        </div>
+                    </a>
+                    <div style="" class="test">0<br><span style="font-size: 12px;">Points</span></div>
+                </div>
 
             </div>
 
-            <div id="champions">
-                <div class="tab_name active" data-href="1">
-                    <h2>Champions</h2>
+        </div>
+
+
+    </div>
+
+    <div id="champions">
+        <div class="tab_name active" data-href="1">
+            <h2>Champions</h2>
+        </div>
+        <div class="tab_name" data-href="2">
+            <h2>ROLE</h2>
+        </div>
+        <div class="tab_name" data-href="3">
+            <h2>Summary</h2>
+        </div>
+        <div class="tab_name" data-href="4">
+            <h2>Ranked</h2>
+        </div>
+        <div id="top_1" class="top">
+            <div id="champion_1" class="col">
+
+                <div class="empty_col">
+                    <i class="fa fa-user fa-2x"></i>
                 </div>
-                <div class="tab_name" data-href="2">
-                    <h2>ROLE</h2>
-                </div>
-                <div class="tab_name" data-href="3">
-                    <h2>Summary</h2>
-                </div>
-                <div class="tab_name" data-href="4">
-                    <h2>Ranked</h2>
-                </div>
-                <div id="top_1" class="top">
-                        <div id="champion_1" class="col">
-
-                            <div class="empty_col">
-                                <i class="fa fa-user fa-2x"></i>
-                            </div>
-                            <div class="champion_empty">
-                                <div class="add_summoner">
-                                    <h3 style="padding-top:40px;">Add Summoner to see</h3>
-                                    <h3>their champions</h3>
-                                    <a class="openModal" href="" data-id="1">
-                                        <i class="fa fa-plus fa-3x"></i>
-                                    </a>
-                                </div>
-
-                                <div class="loading_box" style="display: none;">
-                                    <h3 style="padding-top:40px;">Loading . . . </h3>
-                                    <div class="cssload-loader"></div>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                    <div id="champion_2" class="col">
-
-                        <div class="empty_col">
-                            <i class="fa fa-user fa-2x"></i>
-                        </div>
-                        <div class="champion_empty">
-                            <div class="add_summoner">
-                                <h3 style="padding-top:40px;">Add Summoner to see</h3>
-                                <h3>their champions</h3>
-                                <a class="openModal" href="" data-id="2">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </a>
-                            </div>
-
-                            <div class="loading_box" style="display: none;">
-                                <h3 style="padding-top:40px;">Loading . . . </h3>
-                                <div class="cssload-loader"></div>
-                            </div>
-                        </div>
-
+                <div class="champion_empty">
+                    <div class="add_summoner">
+                        <h3 style="padding-top:40px;">Add Summoner to see</h3>
+                        <h3>their champions</h3>
+                        <a class="openModal" href="" data-id="1">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </a>
                     </div>
 
-                    <div id="champion_3" class="col">
-
-                        <div class="empty_col">
-                            <i class="fa fa-user fa-2x"></i>
-                        </div>
-                        <div class="champion_empty">
-                            <div class="add_summoner">
-                                <h3 style="padding-top:40px;">Add Summoner to see</h3>
-                                <h3>their champions</h3>
-                                <a class="openModal" href="" data-id="3">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </a>
-                            </div>
-
-                            <div class="loading_box" style="display: none;">
-                                <h3 style="padding-top:40px;">Loading . . . </h3>
-                                <div class="cssload-loader"></div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div id="champion_4" class="col">
-
-                        <div class="empty_col">
-                            <i class="fa fa-user fa-2x"></i>
-                        </div>
-                        <div class="champion_empty">
-                            <div class="add_summoner">
-                                <h3 style="padding-top:40px;">Add Summoner to see</h3>
-                                <h3>their champions</h3>
-                                <a class="openModal" href="" data-id="4">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </a>
-                            </div>
-
-                            <div class="loading_box" style="display: none;">
-                                <h3 style="padding-top:40px;">Loading . . . </h3>
-                                <div class="cssload-loader"></div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div id="champion_5" class="col">
-
-                        <div class="empty_col">
-                            <i class="fa fa-user fa-2x"></i>
-                        </div>
-                        <div class="champion_empty">
-                            <div class="add_summoner">
-                                <h3 style="padding-top:40px;">Add Summoner to see</h3>
-                                <h3>their champions</h3>
-                                <a class="openModal" href="" data-id="5">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </a>
-                            </div>
-
-                            <div class="loading_box" style="display: none;">
-                                <h3 style="padding-top:40px;">Loading . . . </h3>
-                                <div class="cssload-loader"></div>
-                            </div>
-                        </div>
-
+                    <div class="loading_box" style="display: none;">
+                        <h3 style="padding-top:40px;">Loading . . . </h3>
+                        <div class="cssload-loader"></div>
                     </div>
                 </div>
 
-                <div id="top_2" class="top" style="display:none;">
-                    <div id="role_1" class="col">
-
-                        <div class="empty_col">
-                            <i class="fa fa-user fa-2x"></i>
-                        </div>
-                        <div class="champion_empty">
-                            <div class="add_summoner">
-                                <h3 style="padding-top:40px;">Add Summoner to see</h3>
-                                <h3>their most played role</h3>
-                                <a class="openModal" href="" data-id="1">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </a>
-                            </div>
-
-                            <div class="loading_box" style="display: none;">
-                                <h3 style="padding-top:40px;">Loading . . . </h3>
-                                <div class="cssload-loader"></div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div id="role_2" class="col">
-
-                        <div class="empty_col">
-                            <i class="fa fa-user fa-2x"></i>
-                        </div>
-                        <div class="champion_empty">
-                            <div class="add_summoner">
-                                <h3 style="padding-top:40px;">Add Summoner to see</h3>
-                                <h3>their most played role</h3>
-                                <a class="openModal" href="" data-id="2">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </a>
-                            </div>
-
-                            <div class="loading_box" style="display: none;">
-                                <h3 style="padding-top:40px;">Loading . . . </h3>
-                                <div class="cssload-loader"></div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div id="role_3" class="col">
-
-                        <div class="empty_col">
-                            <i class="fa fa-user fa-2x"></i>
-                        </div>
-                        <div class="champion_empty">
-                            <div class="add_summoner">
-                                <h3 style="padding-top:40px;">Add Summoner to see</h3>
-                                <h3>their most played role</h3>
-                                <a class="openModal" href="" data-id="3">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </a>
-                            </div>
-
-                            <div class="loading_box" style="display: none;">
-                                <h3 style="padding-top:40px;">Loading . . . </h3>
-                                <div class="cssload-loader"></div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div id="role_4" class="col">
-
-                        <div class="empty_col">
-                            <i class="fa fa-user fa-2x"></i>
-                        </div>
-                        <div class="champion_empty">
-                            <div class="add_summoner">
-                                <h3 style="padding-top:40px;">Add Summoner to see</h3>
-                                <h3>their most played role</h3>
-                                <a class="openModal" href="" data-id="4">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </a>
-                            </div>
-
-                            <div class="loading_box" style="display: none;">
-                                <h3 style="padding-top:40px;">Loading . . . </h3>
-                                <div class="cssload-loader"></div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div id="role_5" class="col">
-
-                        <div class="empty_col">
-                            <i class="fa fa-user fa-2x"></i>
-                        </div>
-                        <div class="champion_empty">
-                            <div class="add_summoner">
-                                <h3 style="padding-top:40px;">Add Summoner to see</h3>
-                                <h3>their most played role</h3>
-                                <a class="openModal" href="" data-id="5">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </a>
-                            </div>
-
-                            <div class="loading_box" style="display: none;">
-                                <h3 style="padding-top:40px;">Loading . . . </h3>
-                                <div class="cssload-loader"></div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div id="top_3" class="top" style="display:none;">
-                    <div id="summary_1" class="col">
-
-                        <div class="empty_col">
-                            <i class="fa fa-user fa-2x"></i>
-                        </div>
-                        <div class="champion_empty">
-                            <div class="add_summoner">
-                                <h3 style="padding-top:40px;">Add Summoner to see</h3>
-                                <h3>their summary</h3>
-                                <a class="openModal" href="" data-id="1">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </a>
-                            </div>
-
-                            <div class="loading_box" style="display: none;">
-                                <h3 style="padding-top:40px;">Loading . . . </h3>
-                                <div class="cssload-loader"></div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div id="summary_2" class="col">
-
-                        <div class="empty_col">
-                            <i class="fa fa-user fa-2x"></i>
-                        </div>
-                        <div class="champion_empty">
-                            <div class="add_summoner">
-                                <h3 style="padding-top:40px;">Add Summoner to see</h3>
-                                <h3>their summary</h3>
-                                <a class="openModal" href="" data-id="2">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </a>
-                            </div>
-
-                            <div class="loading_box" style="display: none;">
-                                <h3 style="padding-top:40px;">Loading . . . </h3>
-                                <div class="cssload-loader"></div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div id="summary_3" class="col">
-
-                        <div class="empty_col">
-                            <i class="fa fa-user fa-2x"></i>
-                        </div>
-                        <div class="champion_empty">
-                            <div class="add_summoner">
-                                <h3 style="padding-top:40px;">Add Summoner to see</h3>
-                                <h3>their summary</h3>
-                                <a class="openModal" href="" data-id="3">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </a>
-                            </div>
-
-                            <div class="loading_box" style="display: none;">
-                                <h3 style="padding-top:40px;">Loading . . . </h3>
-                                <div class="cssload-loader"></div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div id="summary_4" class="col">
-
-                        <div class="empty_col">
-                            <i class="fa fa-user fa-2x"></i>
-                        </div>
-                        <div class="champion_empty">
-                            <div class="add_summoner">
-                                <h3 style="padding-top:40px;">Add Summoner to see</h3>
-                                <h3>their summary</h3>
-                                <a class="openModal" href="" data-id="4">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </a>
-                            </div>
-
-                            <div class="loading_box" style="display: none;">
-                                <h3 style="padding-top:40px;">Loading . . . </h3>
-                                <div class="cssload-loader"></div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div id="summary_5" class="col">
-
-                        <div class="empty_col">
-                            <i class="fa fa-user fa-2x"></i>
-                        </div>
-                        <div class="champion_empty">
-                            <div class="add_summoner">
-                                <h3 style="padding-top:40px;">Add Summoner to see</h3>
-                                <h3>their summary</h3>
-                                <a class="openModal" href="" data-id="5">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </a>
-                            </div>
-
-                            <div class="loading_box" style="display: none;">
-                                <h3 style="padding-top:40px;">Loading . . . </h3>
-                                <div class="cssload-loader"></div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div id="top_4" class="top" style="display:none;">
-                    <div id="ranked_1" class="col">
-
-                        <div class="empty_col">
-                            <i class="fa fa-user fa-2x"></i>
-                        </div>
-                        <div class="champion_empty">
-                            <div class="add_summoner">
-                                <h3 style="padding-top:40px;">Add Summoner to see</h3>
-                                <h3>their ranked stats</h3>
-                                <a class="openModal" href="" data-id="1">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </a>
-                            </div>
-
-                            <div class="loading_box" style="display: none;">
-                                <h3 style="padding-top:40px;">Loading . . . </h3>
-                                <div class="cssload-loader"></div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div id="ranked_2" class="col">
-
-                        <div class="empty_col">
-                            <i class="fa fa-user fa-2x"></i>
-                        </div>
-                        <div class="champion_empty">
-                            <div class="add_summoner">
-                                <h3 style="padding-top:40px;">Add Summoner to see</h3>
-                                <h3>their ranked stats</h3>
-                                <a class="openModal" href="" data-id="2">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </a>
-                            </div>
-
-                            <div class="loading_box" style="display: none;">
-                                <h3 style="padding-top:40px;">Loading . . . </h3>
-                                <div class="cssload-loader"></div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div id="ranked_3" class="col">
-
-                        <div class="empty_col">
-                            <i class="fa fa-user fa-2x"></i>
-                        </div>
-                        <div class="champion_empty">
-                            <div class="add_summoner">
-                                <h3 style="padding-top:40px;">Add Summoner to see</h3>
-                                <h3>their ranked stats</h3>
-                                <a class="openModal" href="" data-id="3">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </a>
-                            </div>
-
-                            <div class="loading_box" style="display: none;">
-                                <h3 style="padding-top:40px;">Loading . . . </h3>
-                                <div class="cssload-loader"></div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div id="ranked_4" class="col">
-
-                        <div class="empty_col">
-                            <i class="fa fa-user fa-2x"></i>
-                        </div>
-                        <div class="champion_empty">
-                            <div class="add_summoner">
-                                <h3 style="padding-top:40px;">Add Summoner to see</h3>
-                                <h3>their ranked stats</h3>
-                                <a class="openModal" href="" data-id="4">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </a>
-                            </div>
-
-                            <div class="loading_box" style="display: none;">
-                                <h3 style="padding-top:40px;">Loading . . . </h3>
-                                <div class="cssload-loader"></div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div id="ranked_5" class="col">
-
-                        <div class="empty_col">
-                            <i class="fa fa-user fa-2x"></i>
-                        </div>
-                        <div class="champion_empty">
-                            <div class="add_summoner">
-                                <h3 style="padding-top:40px;">Add Summoner to see</h3>
-                                <h3>their ranked stats</h3>
-                                <a class="openModal" href="" data-id="5">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </a>
-                            </div>
-
-                            <div class="loading_box" style="display: none;">
-                                <h3 style="padding-top:40px;">Loading . . . </h3>
-                                <div class="cssload-loader"></div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
             </div>
+
+
+            <div id="champion_2" class="col">
+
+                <div class="empty_col">
+                    <i class="fa fa-user fa-2x"></i>
+                </div>
+                <div class="champion_empty">
+                    <div class="add_summoner">
+                        <h3 style="padding-top:40px;">Add Summoner to see</h3>
+                        <h3>their champions</h3>
+                        <a class="openModal" href="" data-id="2">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+
+                    <div class="loading_box" style="display: none;">
+                        <h3 style="padding-top:40px;">Loading . . . </h3>
+                        <div class="cssload-loader"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="champion_3" class="col">
+
+                <div class="empty_col">
+                    <i class="fa fa-user fa-2x"></i>
+                </div>
+                <div class="champion_empty">
+                    <div class="add_summoner">
+                        <h3 style="padding-top:40px;">Add Summoner to see</h3>
+                        <h3>their champions</h3>
+                        <a class="openModal" href="" data-id="3">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+
+                    <div class="loading_box" style="display: none;">
+                        <h3 style="padding-top:40px;">Loading . . . </h3>
+                        <div class="cssload-loader"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="champion_4" class="col">
+
+                <div class="empty_col">
+                    <i class="fa fa-user fa-2x"></i>
+                </div>
+                <div class="champion_empty">
+                    <div class="add_summoner">
+                        <h3 style="padding-top:40px;">Add Summoner to see</h3>
+                        <h3>their champions</h3>
+                        <a class="openModal" href="" data-id="4">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+
+                    <div class="loading_box" style="display: none;">
+                        <h3 style="padding-top:40px;">Loading . . . </h3>
+                        <div class="cssload-loader"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="champion_5" class="col">
+
+                <div class="empty_col">
+                    <i class="fa fa-user fa-2x"></i>
+                </div>
+                <div class="champion_empty">
+                    <div class="add_summoner">
+                        <h3 style="padding-top:40px;">Add Summoner to see</h3>
+                        <h3>their champions</h3>
+                        <a class="openModal" href="" data-id="5">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+
+                    <div class="loading_box" style="display: none;">
+                        <h3 style="padding-top:40px;">Loading . . . </h3>
+                        <div class="cssload-loader"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="top_2" class="top" style="display:none;">
+            <div id="role_1" class="col">
+
+                <div class="empty_col">
+                    <i class="fa fa-user fa-2x"></i>
+                </div>
+                <div class="champion_empty">
+                    <div class="add_summoner">
+                        <h3 style="padding-top:40px;">Add Summoner to see</h3>
+                        <h3>their most played role</h3>
+                        <a class="openModal" href="" data-id="1">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+
+                    <div class="loading_box" style="display: none;">
+                        <h3 style="padding-top:40px;">Loading . . . </h3>
+                        <div class="cssload-loader"></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div id="role_2" class="col">
+
+                <div class="empty_col">
+                    <i class="fa fa-user fa-2x"></i>
+                </div>
+                <div class="champion_empty">
+                    <div class="add_summoner">
+                        <h3 style="padding-top:40px;">Add Summoner to see</h3>
+                        <h3>their most played role</h3>
+                        <a class="openModal" href="" data-id="2">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+
+                    <div class="loading_box" style="display: none;">
+                        <h3 style="padding-top:40px;">Loading . . . </h3>
+                        <div class="cssload-loader"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="role_3" class="col">
+
+                <div class="empty_col">
+                    <i class="fa fa-user fa-2x"></i>
+                </div>
+                <div class="champion_empty">
+                    <div class="add_summoner">
+                        <h3 style="padding-top:40px;">Add Summoner to see</h3>
+                        <h3>their most played role</h3>
+                        <a class="openModal" href="" data-id="3">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+
+                    <div class="loading_box" style="display: none;">
+                        <h3 style="padding-top:40px;">Loading . . . </h3>
+                        <div class="cssload-loader"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="role_4" class="col">
+
+                <div class="empty_col">
+                    <i class="fa fa-user fa-2x"></i>
+                </div>
+                <div class="champion_empty">
+                    <div class="add_summoner">
+                        <h3 style="padding-top:40px;">Add Summoner to see</h3>
+                        <h3>their most played role</h3>
+                        <a class="openModal" href="" data-id="4">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+
+                    <div class="loading_box" style="display: none;">
+                        <h3 style="padding-top:40px;">Loading . . . </h3>
+                        <div class="cssload-loader"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="role_5" class="col">
+
+                <div class="empty_col">
+                    <i class="fa fa-user fa-2x"></i>
+                </div>
+                <div class="champion_empty">
+                    <div class="add_summoner">
+                        <h3 style="padding-top:40px;">Add Summoner to see</h3>
+                        <h3>their most played role</h3>
+                        <a class="openModal" href="" data-id="5">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+
+                    <div class="loading_box" style="display: none;">
+                        <h3 style="padding-top:40px;">Loading . . . </h3>
+                        <div class="cssload-loader"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="top_3" class="top" style="display:none;">
+            <div id="summary_1" class="col">
+
+                <div class="empty_col">
+                    <i class="fa fa-user fa-2x"></i>
+                </div>
+                <div class="champion_empty">
+                    <div class="add_summoner">
+                        <h3 style="padding-top:40px;">Add Summoner to see</h3>
+                        <h3>their summary</h3>
+                        <a class="openModal" href="" data-id="1">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+
+                    <div class="loading_box" style="display: none;">
+                        <h3 style="padding-top:40px;">Loading . . . </h3>
+                        <div class="cssload-loader"></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div id="summary_2" class="col">
+
+                <div class="empty_col">
+                    <i class="fa fa-user fa-2x"></i>
+                </div>
+                <div class="champion_empty">
+                    <div class="add_summoner">
+                        <h3 style="padding-top:40px;">Add Summoner to see</h3>
+                        <h3>their summary</h3>
+                        <a class="openModal" href="" data-id="2">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+
+                    <div class="loading_box" style="display: none;">
+                        <h3 style="padding-top:40px;">Loading . . . </h3>
+                        <div class="cssload-loader"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="summary_3" class="col">
+
+                <div class="empty_col">
+                    <i class="fa fa-user fa-2x"></i>
+                </div>
+                <div class="champion_empty">
+                    <div class="add_summoner">
+                        <h3 style="padding-top:40px;">Add Summoner to see</h3>
+                        <h3>their summary</h3>
+                        <a class="openModal" href="" data-id="3">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+
+                    <div class="loading_box" style="display: none;">
+                        <h3 style="padding-top:40px;">Loading . . . </h3>
+                        <div class="cssload-loader"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="summary_4" class="col">
+
+                <div class="empty_col">
+                    <i class="fa fa-user fa-2x"></i>
+                </div>
+                <div class="champion_empty">
+                    <div class="add_summoner">
+                        <h3 style="padding-top:40px;">Add Summoner to see</h3>
+                        <h3>their summary</h3>
+                        <a class="openModal" href="" data-id="4">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+
+                    <div class="loading_box" style="display: none;">
+                        <h3 style="padding-top:40px;">Loading . . . </h3>
+                        <div class="cssload-loader"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="summary_5" class="col">
+
+                <div class="empty_col">
+                    <i class="fa fa-user fa-2x"></i>
+                </div>
+                <div class="champion_empty">
+                    <div class="add_summoner">
+                        <h3 style="padding-top:40px;">Add Summoner to see</h3>
+                        <h3>their summary</h3>
+                        <a class="openModal" href="" data-id="5">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+
+                    <div class="loading_box" style="display: none;">
+                        <h3 style="padding-top:40px;">Loading . . . </h3>
+                        <div class="cssload-loader"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="top_4" class="top" style="display:none;">
+            <div id="ranked_1" class="col">
+
+                <div class="empty_col">
+                    <i class="fa fa-user fa-2x"></i>
+                </div>
+                <div class="champion_empty">
+                    <div class="add_summoner">
+                        <h3 style="padding-top:40px;">Add Summoner to see</h3>
+                        <h3>their ranked stats</h3>
+                        <a class="openModal" href="" data-id="1">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+
+                    <div class="loading_box" style="display: none;">
+                        <h3 style="padding-top:40px;">Loading . . . </h3>
+                        <div class="cssload-loader"></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div id="ranked_2" class="col">
+
+                <div class="empty_col">
+                    <i class="fa fa-user fa-2x"></i>
+                </div>
+                <div class="champion_empty">
+                    <div class="add_summoner">
+                        <h3 style="padding-top:40px;">Add Summoner to see</h3>
+                        <h3>their ranked stats</h3>
+                        <a class="openModal" href="" data-id="2">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+
+                    <div class="loading_box" style="display: none;">
+                        <h3 style="padding-top:40px;">Loading . . . </h3>
+                        <div class="cssload-loader"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="ranked_3" class="col">
+
+                <div class="empty_col">
+                    <i class="fa fa-user fa-2x"></i>
+                </div>
+                <div class="champion_empty">
+                    <div class="add_summoner">
+                        <h3 style="padding-top:40px;">Add Summoner to see</h3>
+                        <h3>their ranked stats</h3>
+                        <a class="openModal" href="" data-id="3">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+
+                    <div class="loading_box" style="display: none;">
+                        <h3 style="padding-top:40px;">Loading . . . </h3>
+                        <div class="cssload-loader"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="ranked_4" class="col">
+
+                <div class="empty_col">
+                    <i class="fa fa-user fa-2x"></i>
+                </div>
+                <div class="champion_empty">
+                    <div class="add_summoner">
+                        <h3 style="padding-top:40px;">Add Summoner to see</h3>
+                        <h3>their ranked stats</h3>
+                        <a class="openModal" href="" data-id="4">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+
+                    <div class="loading_box" style="display: none;">
+                        <h3 style="padding-top:40px;">Loading . . . </h3>
+                        <div class="cssload-loader"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="ranked_5" class="col">
+
+                <div class="empty_col">
+                    <i class="fa fa-user fa-2x"></i>
+                </div>
+                <div class="champion_empty">
+                    <div class="add_summoner">
+                        <h3 style="padding-top:40px;">Add Summoner to see</h3>
+                        <h3>their ranked stats</h3>
+                        <a class="openModal" href="" data-id="5">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+
+                    <div class="loading_box" style="display: none;">
+                        <h3 style="padding-top:40px;">Loading . . . </h3>
+                        <div class="cssload-loader"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <div class="footer">
         <p> The Champion Mastery Api Challenge website isn't endorsed by Riot Games and doesn't reflect the views or
@@ -771,7 +781,7 @@
                             }
 
                             profile += '<div class="champion_info" ' + style + '>'
-                                + '<div class="circle_2" data-value="'+ parseFloat((item.championLevel / 10) * 2) + '">'
+                                + '<div data-id="' + item.championDetail.id+'" class="circle_2 box_champion2" data-value="'+ parseFloat((item.championLevel / 10) * 2) + '">'
                                 + '<div class="champion_icon" style="background: url(http://ddragon.leagueoflegends.com/cdn/6.9.1/img/sprite/' + item.championDetail.image.sprite + ' ); background-position: -' + item.championDetail.image.x + 'px -' + item.championDetail.image.y +'px;">'
                                 + '<span>Lvl<br>' + item.championLevel + '</span>'
                                 + '</div>'
@@ -851,7 +861,7 @@
                             ranked += '<div class="champion_info" >'
                                 + '<div class="champion_icon_ranked" style="background: url(http://ddragon.leagueoflegends.com/cdn/6.9.1/img/sprite/' + item.championDetail.image.sprite + ' ); background-position: -' + item.championDetail.image.x + 'px -' + item.championDetail.image.y +'px;">'
                                 + '<span>' + item.stats.totalSessionsWon +'</span><br><small>Wins</small>'+
-                                 '</div>'
+                                '</div>'
                                 + '<p class="title" title="' + item.championDetail.name+' ' + item.championDetail.title + '"> ' + item.championDetail.name + '</p>' +
                                 '<div class="details">' +
                                 '<p>SessionsPlayed: ' + item.stats.totalSessionsPlayed + '</p>' +
@@ -972,6 +982,124 @@
             return false;
         });
 
+
+
+
+
+
+
+        $(document).delegate('#closeModal3','click', function(e) {
+            $('#openModal3').removeClass('show');
+
+        });
+
+        $(document).delegate('.box_champion2','click', function(e) {
+            e.preventDefault();
+            $('#openModal4').addClass('show');
+            var id = $(this).data('id');
+            var output = '';
+            var spells = '';
+            var spells_desc = '';
+            var class_ac='';
+            $.ajax({
+                type: 'POST',
+                url: 'api.php?action=getChampion',
+                dataType: 'json',
+                data: {id:id},
+                success: function(data){
+                    if(data.success){
+                        if(typeof(data.message.champion.tags[1]) != "undefined" && data.message.champion.tags[1] !== null){
+                            tag2 = data.message.champion.tags[1];
+                        }else{
+                            tag2 = 'N/A';
+                        }
+                        output = '<div id="main_modal" style="background-image: url(\'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/'+data.message.champion.key+'_0.jpg\');">'+
+                            '<a id="closeModal3" href="javascript:void(0)" title="Close" class="close">X</a>'+
+
+                            '<div class="leftModal"> '+
+                            '<h2>'+ data.message.champion.name +'<span> '+ data.message.champion.title +'</span></h2>'+
+                            '<div class="attributes">'+
+                            '<div class="box_scroll">'+
+                            '<h4> '+ data.message.champion.tags[0] +' </h4>'+
+                            '<h4> Secondary: '+ tag2 +' </h4>'+
+                            '<p>  '+ data.message.champion.lore +' </p>'+
+                            '</div>'+
+                            '</div>'+
+                            '<div class="spells">';
+
+                        spells += '<div class="spell active" data-href="6" style="background: url(\'http://ddragon.leagueoflegends.com/cdn/6.9.1/img/sprite/'+data.message.champion.passive.image.sprite+'\');background-position: -'+data.message.champion.passive.image.x+'px -'+data.message.champion.passive.image.y+'px;"></div>';
+
+                        spells_desc +='<div class="spell_desc" id="desc_6">'+
+                            '<h3>'+data.message.champion.passive.name+'</h3>'+
+                            '<p>'+data.message.champion.passive.description+'</p>'+
+                            '</div>';
+
+                        $.each(data.message.champion.spells, function(i, item) {
+
+                            spells += '<div class="spell" data-href="'+i+'" style="background: url(\'http://ddragon.leagueoflegends.com/cdn/6.9.1/img/sprite/'+item.image.sprite+'\');background-position: -'+item.image.x+'px -'+item.image.y+'px;"></div>';
+
+
+                            spells_desc +='<div class="spell_desc" id="desc_'+i+'" style="display:none">'+
+                                '<h3>'+item.name+'</h3>'+
+                                '<p>'+item.description+'</p>'+
+                                '</div>';
+                        });
+                        output += spells + spells_desc;
+                        output +='</div>'+
+                            '</div>'+
+                            '<div class="centerModal">'+
+                            '<div class="stats">'+
+                            '<div class="stats_bar" style="width:'+data.message.champion.info['attack']+'0%;"><h6>Attack</h6></div>'+
+                            '<div class="stats_bar" style="width:'+data.message.champion.info['defense']+'0%;"><h6>Defense<h6></div>'+
+                            '<div class="stats_bar" style="width:'+data.message.champion.info['magic']+'0%;"><h6>Magic<h6></div>'+
+                            '<div class="stats_bar" style="width:'+data.message.champion.info['difficulty']+'0%;"><h6>Difficulty<h6></div>'+
+                            '</div>'+
+                            '</div>'+
+                            '<div class="rightModal">';
+                        $.each(data.message.champion.skins, function(i, item) {
+                            if(i == 0){
+                                class_ac = 'active';
+                            }else{
+                                class_ac = '';
+                            }
+                            output += '<div class="skin '+ class_ac +'" style="background-image: url(\'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/'+data.message.champion.key+'_'+item.num+'.jpg\');background-size:cover;" title="'+item.name+'"></div>';
+                        });
+                        output += '</div>'+
+                            '</div>';
+                        $('#openModal3').html(output);
+                        $('#openModal4').removeClass('show');
+                        $('#openModal3').addClass('show');
+                    }else{
+                        $('#openModal4').removeClass('show');
+                    }
+                }
+            });
+
+
+            return false;
+        });
+
+        $(document).delegate('.spell','click', function(e) {
+            e.preventDefault();
+            var id = $(this).data('href');
+            $('.spell_desc').hide();
+            $('#desc_'+id).fadeIn('slow');
+            $('.spell').removeClass('active');
+            $(this).addClass('active');
+
+
+            return false;
+        });
+
+        $(document).delegate('.skin','click', function(e) {
+            e.preventDefault();
+            var style = $(this).attr('style');
+            console.log(style);
+            $('#main_modal').attr('style',style);
+            $('.skin').removeClass('active');
+            $(this).addClass('active');
+            return false;
+        });
     });
 
     function showAllChampions(obj)
