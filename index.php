@@ -56,7 +56,7 @@
                                 <option value="ru">Russia</option>
                                 <option value="tr">Turkey</option>
                             </select>
-                            <input type="text" placeholder="Summoner &nbsp;&#xF002" name="name" value="imnubcake"/>
+                            <input type="text" placeholder="Summoner &nbsp;&#xF002" name="name" value=""/>
                             <input type="submit" value="&#xf067; &nbsp; Add" class="add_player" data-href="single">
 
                         </form>
@@ -82,7 +82,7 @@
                                         <option value="ru">Russia</option>
                                         <option value="tr">Turkey</option>
                                     </select>
-                                    <input type="text" placeholder="Summoner &nbsp;&#xF002" name="name" value="imnubcake"/>
+                                    <input type="text" placeholder="Summoner &nbsp;&#xF002" name="name" value=""/>
                                     <input type="hidden" value="" class="input_player" readonly/>
                                     <input type="submit" value="&#xf067; &nbsp; Add" class="add_player" data-href="modal">
 
