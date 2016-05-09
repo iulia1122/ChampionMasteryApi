@@ -18,32 +18,35 @@ Here you can:
 -Ranked summary
 
 ### 2. Champion list 
-<a href="http://championmastery.redcrin.com/champions.php" target="_blank_">Champion List</a>
+<a href="http://championmastery.redcrin.com/champions.php" target="_blank_">Champions List</a>
 
 With:
 - filters by role
 - champion information viewer
 
 
-Installation:
+### Installation:
 
-1. Install PHP(wamp)
-2. Set your API key from Riot Development in include/api.php
+1. Install PHP and Apache
+2. Set your API key from Riot Development in include/api.php in variable $apiKey
 4. Run the app. You should be able to view the website on your http://localhost/.
 5. Have fun.(If you find some bugs please contact us)
 
 
-Technical Info:
+### Technical Info:
 
 We tried to keep the project simple and fast, so we only used the following tehnlogies: 
 
--PHP
--jQuery & Ajax
--HTML/CSS3 (created unique design in Photoshop)
+<ul>
+<li>PHP</li>
+<li>jQuery & Ajax</li>
+<li>HTML/CSS3 (created unique design in Photoshop)</li>
+</ul>
 jQuery Plugins: 
--Circle progress: https://github.com/kottenator/jquery-circle-progress
--Isotope Filter: https://github.com/metafizzy/isotope
-
+<ul>
+<li>Circle progress: https://github.com/kottenator/jquery-circle-progress</li>
+<li>Isotope Filter: https://github.com/metafizzy/isotope</li>
+</ul>
 We tried to make the site more user friendly by using Ajax instead of post methods in PHP to reduce the waiting time on refresh. For displaying and
 viewing champion data we created our custom Css3 modal. We made the project entirely with Api requests but in the future we can add a MySQL database 
 to reduce request time for static api data.
