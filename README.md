@@ -9,7 +9,7 @@ themselves and their friends.
 We have divided the site in two main parts:
 
 ### 1. Homepage with summoner search
-<a href='http://championmastery.redcrin.com' target='_blank'>http://championmastery.redcrin.com</a>
+<a href="http://championmastery.redcrin.com" target="_blank">Demo URL</a>
 
 Here you can:
 -view champion mastery points
@@ -18,7 +18,7 @@ Here you can:
 -Ranked summary
 
 ### 2. Champion list 
-http://championmastery.redcrin.com/champions.php
+<a href="http://championmastery.redcrin.com/champions.php" target="_blank_">Champion List</a>
 
 With:
 - filters by role
