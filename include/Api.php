@@ -3,7 +3,7 @@
 class Api
 {
 
-    private $apiKey = '2f990882-0118-40e7-8329-504da8e22f6b';
+    private $apiKey = 'add-your-api-key';
 
     private $version;
 
