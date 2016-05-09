@@ -65,6 +65,6 @@ URL DEMO:
 http://championmastery.redcrin.com
 
 
-We think you will love it!
+We hope you will love it!
 Thanks!
 
