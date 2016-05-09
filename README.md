@@ -1,6 +1,6 @@
-Champion Mastery - Riot API Challenge
+# Champion Mastery - Riot API Challenge
 
-Description 
+## Description 
 
 This website was created for the Riot Api Challenge, April 2016 on Champion Mastery data. Gaming is all about fun, luck and having a good strategy, 
 so we decided to combine them into one website. We hope it will be a fun experience for everyone that wishes to learn more about League of Legends, 
@@ -8,8 +8,8 @@ themselves and their friends.
 
 We have divided the site in two main parts:
 
-1. Homepage with summoner search
-http://championmastery.redcrin.com
+### 1. Homepage with summoner search
+<a href='http://championmastery.redcrin.com' target='_blank'>http://championmastery.redcrin.com</a>
 
 Here you can:
 -view champion mastery points
@@ -17,7 +17,7 @@ Here you can:
 -most played role
 -Ranked summary
 
-2. Champion list 
+### 2. Champion list 
 http://championmastery.redcrin.com/champions.php
 
 With:
