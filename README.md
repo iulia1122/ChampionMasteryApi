@@ -10,7 +10,7 @@ We have divided the site in two main parts:
 ### 1. Homepage with mutiple summoner searches
 <a href="http://championmastery.redcrin.com" target="_blank">Demo URL</a>
 
-Here you can view:
+Here you can view for you and 4 other friends:
 - Champion mastery points
 - Summoner summary
 - Most played role
