@@ -7,7 +7,7 @@ We hope it will be a fun experience for everyone that wishes to learn more about
 
 We have divided the site in two main parts:
 
-### 1. Homepage with summoner search
+### 1. Homepage with mutiple summoner searches
 <a href="http://championmastery.redcrin.com" target="_blank">Demo URL</a>
 
 Here you can view:
