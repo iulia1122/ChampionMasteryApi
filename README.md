@@ -51,7 +51,7 @@ viewing champion data we created our custom Css3 modal. We made the project enti
 to reduce request time for static api data.
 
 
-What we learned from this
+### What we learned from this
 
 We learned about Riot Api and how to use Ajax to handle multiple server requests time.
 
