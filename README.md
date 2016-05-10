@@ -2,9 +2,8 @@
 
 ## Description 
 
-This website was created for the Riot Api Challenge, April 2016 on Champion Mastery data. Gaming is all about fun, luck and having a good strategy, 
-so we decided to combine them into one website. We hope it will be a fun experience for everyone that wishes to learn more about League of Legends, 
-themselves and their friends.
+This website was created for the Riot Api Challenge, April 2016 on Champion Mastery data. Gaming is all about fun, luck and having a good strategy, so we decided to combine them into one website. 
+We hope it will be a fun experience for everyone that wishes to learn more about League of Legends, themselves and their friends. As far as luck goes, we went on and got council from Lady Luck herself upon choosing the category, and as summoners (imnubcake and psycho), we were happy that faith has given us the opportunity to work on our creativity/originality skills, and in our arsenal of spells and code creating magic, we used PHP/HTML/JQuery to bring chaos, light and awe to the eyes and minds of any who dare enter our website, engulfing them better in the world of League of Legends.
 
 We have divided the site in two main parts:
 
