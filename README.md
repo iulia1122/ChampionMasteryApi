@@ -11,7 +11,7 @@ We have divided the site in two main parts:
 <a href="http://championmastery.redcrin.com" target="_blank">Demo URL</a>
 
 Here you can:
-## -view champion mastery points
+-view champion mastery points
 -summoner summary
 -most played role
 -Ranked summary
