@@ -11,9 +11,9 @@ We have divided the site in two main parts:
 <a href="http://championmastery.redcrin.com" target="_blank">Demo URL</a>
 
 Here you can:
-- view champion mastery points
-- summoner summary
-- most played role
+- View champion mastery points
+- Summoner summary
+- Most played role
 - Ranked summary
 
 ### 2. Champion list 
