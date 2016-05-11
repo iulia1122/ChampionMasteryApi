@@ -1682,8 +1682,9 @@ pre {
 }
 
 .image_center{
-    width:810px;
-    height:440px;
+    height: 594px;
+    text-align: center;
+    width: 100%;
 }
 
 .subtitle{
