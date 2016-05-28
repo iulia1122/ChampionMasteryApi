@@ -40,7 +40,7 @@ class Api
         return $platformList[strtoupper($region)];
     }
 
-    private function getLatestCDNVersion(){
+    public function getLatestCDNVersion(){
         $url = "https://ddragon.leagueoflegends.com/api/versions.json";
         $versions = file_get_contents($url);
         $versions = json_decode($versions);
