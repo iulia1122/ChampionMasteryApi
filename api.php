@@ -3,6 +3,7 @@
 require_once "include/Api.php";
 
 $api = new Api();
+$version = $api->getLatestCDNVersion();
 $action = $_GET['action'];
 $data['success'] = 1;
 $data['message'] = 0;
@@ -39,6 +40,7 @@ switch($action) {
                 } else {
 
                     $data['success'] = 1;
+                    $data['version'] = $version;
                     $data['message'] = array(
                         'player' => $my_player,
                         'score' => $my_score,
@@ -68,6 +70,7 @@ switch($action) {
             echo json_encode($data);
         } else {
             $data['success'] = 1;
+            $data['version'] = $version;
             $data['message'] = array(
                 'champion' => $get_champion,
             );
