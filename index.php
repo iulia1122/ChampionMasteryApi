@@ -782,7 +782,7 @@
 
                             profile += '<div class="champion_info" ' + style + '>'
                                 + '<div data-id="' + item.championDetail.id+'" class="circle_2 box_champion2" data-value="'+ parseFloat((item.championLevel / 10) * 2) + '">'
-                                + '<div class="champion_icon" style="background: url(http://ddragon.leagueoflegends.com/cdn/6.9.1/img/sprite/' + item.championDetail.image.sprite + ' ); background-position: -' + item.championDetail.image.x + 'px -' + item.championDetail.image.y +'px;">'
+                                + '<div class="champion_icon" style="background: url(http://ddragon.leagueoflegends.com/cdn/'+ data.version +'/img/sprite/' + item.championDetail.image.sprite + ' ); background-position: -' + item.championDetail.image.x + 'px -' + item.championDetail.image.y +'px;">'
                                 + '<span>Lvl<br>' + item.championLevel + '</span>'
                                 + '</div>'
                                 + '<img class="getChest" src="image/' + chest_icon + '" alt="Chest" title="Chest"/>'
@@ -859,7 +859,7 @@
 
                         $.each(data.message.ranked.champions, function(i, item) {
                             ranked += '<div class="champion_info" >'
-                                + '<div class="champion_icon_ranked" style="background: url(http://ddragon.leagueoflegends.com/cdn/6.9.1/img/sprite/' + item.championDetail.image.sprite + ' ); background-position: -' + item.championDetail.image.x + 'px -' + item.championDetail.image.y +'px;">'
+                                + '<div class="champion_icon_ranked" style="background: url(http://ddragon.leagueoflegends.com/cdn/'+ data.version +'/img/sprite/' + item.championDetail.image.sprite + ' ); background-position: -' + item.championDetail.image.x + 'px -' + item.championDetail.image.y +'px;">'
                                 + '<span>' + item.stats.totalSessionsWon +'</span><br><small>Wins</small>'+
                                 '</div>'
                                 + '<p class="title" title="' + item.championDetail.name+' ' + item.championDetail.title + '"> ' + item.championDetail.name + '</p>' +
@@ -1027,7 +1027,7 @@
                             '</div>'+
                             '<div class="spells">';
 
-                        spells += '<div class="spell active" data-href="6" style="background: url(\'http://ddragon.leagueoflegends.com/cdn/6.9.1/img/sprite/'+data.message.champion.passive.image.sprite+'\');background-position: -'+data.message.champion.passive.image.x+'px -'+data.message.champion.passive.image.y+'px;"></div>';
+                        spells += '<div class="spell active" data-href="6" style="background: url(\'http://ddragon.leagueoflegends.com/cdn/'+ data.version +'/img/sprite/'+data.message.champion.passive.image.sprite+'\');background-position: -'+data.message.champion.passive.image.x+'px -'+data.message.champion.passive.image.y+'px;"></div>';
 
                         spells_desc +='<div class="spell_desc" id="desc_6">'+
                             '<h3>'+data.message.champion.passive.name+'</h3>'+
@@ -1036,7 +1036,7 @@
 
                         $.each(data.message.champion.spells, function(i, item) {
 
-                            spells += '<div class="spell" data-href="'+i+'" style="background: url(\'http://ddragon.leagueoflegends.com/cdn/6.9.1/img/sprite/'+item.image.sprite+'\');background-position: -'+item.image.x+'px -'+item.image.y+'px;"></div>';
+                            spells += '<div class="spell" data-href="'+i+'" style="background: url(\'http://ddragon.leagueoflegends.com/cdn/'+ data.version +'/img/sprite/'+item.image.sprite+'\');background-position: -'+item.image.x+'px -'+item.image.y+'px;"></div>';
 
 
                             spells_desc +='<div class="spell_desc" id="desc_'+i+'" style="display:none">'+
