@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="main.css">
     <script src="js/jquery-1.12.3.min.js"></script>
     <script src="js/circle-progress.js"></script>
-	<script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+	<script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
 </head>
 <body>
 	
